@@ -5,7 +5,7 @@ import './Login.css'
 
 const LoginForm = () => {
   const navigate = useNavigate();
-  const [username, setUsername] = useState('ajlksdf');
+  const [username, setUsername] = useState('John');
   const [password, setPassword] = useState('asdfsadf');
   const { login } = useContext(AuthContext);
 
