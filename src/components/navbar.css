@@ -1,0 +1,83 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logo-img{
+    background-color: black;
+    height: 50px;
+}
+
+.navbar .logo h2 {
+    color: white;
+    margin: 0;
+}
+
+.profile-image{
+    height: 70px;
+    background-color: black;
+}
+
+
+ .material-symbols-outlined {
+     font-variation-settings:
+             'FILL' 0,
+             'wght' 200,
+             'GRAD' 0,
+             'opsz' 24;
+     font-size: 35px;
+     color: white;
+     transition: color 0.3s ease;
+     cursor: pointer;
+ }
+
+ .material-symbols-outlined:hover{
+     color: black;
+     color: #f39c12;
+ }
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.nav-links a.active {
+    color: #f39c12; /* Active link color */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+.profile-icon{
+    position: relative;
+}
+.profile-options{
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    background-color: red;
+
+}
