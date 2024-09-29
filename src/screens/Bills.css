@@ -1,0 +1,33 @@
+
+.body-container{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+}
+
+.bill-tab{
+    display: flex;
+    margin: auto;
+}
+
+.paid-bills-tab , .current-bills-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    margin: 20px;
+    border: 1px solid black;
+    font-size: 22px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.paid-bills-tab:hover , .current-bills-tab:hover{
+    color:#f39c12;
+    font-size: 24px;
+}

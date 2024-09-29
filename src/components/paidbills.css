@@ -1,0 +1,12 @@
+.outer-container{
+    width: 650px;
+    height: 200px;
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+.topic{
+    border-bottom: 1px solid grey;
+    font-size: 22px;
+}
