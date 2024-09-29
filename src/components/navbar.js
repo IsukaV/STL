@@ -1,9 +1,27 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './navbar.css'; // Optional: for custom styles
+import ProfileList from './profilelist'
 
 const Navbar = () => {
     const location = useLocation();
+
+    const menuItems = ['Profile', 'Settings', 'Logout'];
+
+    const handleMenuItemSelect = (item) => {
+        // Handle item selection logic here
+        console.log('Selected item:', item);
+      };
+
+      const handleProfileClicked = () => {
+        if(profileClicked==true){
+            setProfileClicked(false)
+        }else{
+            setProfileClicked(true)
+        }
+      }
+
+      const [profileClicked, setProfileClicked] = useState(false); 
     return (
         <div>
         <nav className="navbar">
@@ -24,7 +42,10 @@ const Navbar = () => {
                     <span class="notification-icon" className="material-symbols-outlined">notifications</span>
                 </li>
                 <li>
-                    <span class="profile-icon" className="material-symbols-outlined">account_circle</span>
+                    <div style={{position: 'relative'}}>
+                        <span class="profile-icon" className="material-symbols-outlined" onClick={handleProfileClicked}>account_circle</span>
+                        <ProfileList pressed={profileClicked} items={menuItems} onSelect={handleMenuItemSelect} />
+                    </div>
                 </li>
             </ul>
         </nav>

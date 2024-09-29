@@ -1,0 +1,46 @@
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Adjust based on profile icon's height */
+    right: 50%;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    z-index: 1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+.dropdown-menu button{
+    width: 100px;
+    height: 30px;
+    font-family: 'Poppins';
+    background-color: white;
+    font-size: 16px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.dropdown-menu button:hover{
+
+    background-color: black;
+    color: white;
+
+
+}
+
+  .dropdown-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    border: 1px solid black;
+  }
+  
+  .dropdown-menu ul li {
+    display: block; /* Changed to block for proper width and alignment */
+    width: 100px;
+    border: 1px solid black;
+    margin: 5px 0; /* Add margin for vertical spacing */
+  }
+  
