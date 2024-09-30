@@ -7,6 +7,7 @@ import Authentication from "../screens/Authentication";
 import Bills from "../screens/Bills";
 import Services from "../screens/Services";
 import SignUp from "../screens/Signup"
+import Payment from "../screens/Payment"
 
 const AppRouter = () => {
   const { isAuthenticated } = useContext(AuthContext);
@@ -21,6 +22,7 @@ const AppRouter = () => {
           <Route path="/bils" element={isAuthenticated ? <HomePage /> : <LoginForm />} />
           <Route path="/bills" element={<Bills />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/payment" element={<Payment />} />
       </Routes>
     </Router>
   );

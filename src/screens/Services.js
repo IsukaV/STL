@@ -3,7 +3,7 @@ import Navbar from '../components/navbar';
 
 const Services = () => {
     return (
-        <div>
+        <div style={{paddingTop: "100px"}}>
             <Navbar />
             <p>This is services</p>
         </div>

@@ -54,9 +54,18 @@ p{
     
 }
 
+.pay-btn:hover{
+    font-weight: bold;
+}
+
 .info-btn{
     background-color: white;
     border: 1px solid black;
     margin-right: 20px;
 
+}
+
+.info-btn:hover{
+    background-color: rgb(224, 224, 224);
+    font-weight: bold;
 }

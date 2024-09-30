@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './navbar.css'; // Optional: for custom styles
 import ProfileList from './profilelist'
+import Notifications from './notifications';
 
 const Navbar = () => {
     const location = useLocation();
@@ -18,10 +19,23 @@ const Navbar = () => {
             setProfileClicked(false)
         }else{
             setProfileClicked(true)
+            setNotificationsClicked(false)
+        }
+      }
+
+      const handleNotificationsClicked = () => {
+        if(notificationsClicked == true){
+            setNotificationsClicked(false)
+
+        }else{
+            setNotificationsClicked(true)
+            setProfileClicked(false)
         }
       }
 
       const [profileClicked, setProfileClicked] = useState(false); 
+      const [notificationsClicked, setNotificationsClicked] = useState(false); 
+
     return (
         <div>
         <nav className="navbar">
@@ -39,7 +53,10 @@ const Navbar = () => {
                     <Link to="/services" className={location.pathname === '/services' ? 'active' : ''}>Services</Link>
                 </li>
                 <li>
-                    <span class="notification-icon" className="material-symbols-outlined">notifications</span>
+                    <div style={{position: 'relative'}}>
+                        <span class="notification-icon" className="material-symbols-outlined" onClick={handleNotificationsClicked}>notifications</span>
+                        <Notifications pressed={notificationsClicked}/>
+                    </div>
                 </li>
                 <li>
                     <div style={{position: 'relative'}}>

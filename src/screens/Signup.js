@@ -17,6 +17,7 @@ const LoginForm = () => {
   };
 
   return (
+    <div class="signup-page-background">
     <div class="login-container">
       <img src="/images/STL-logo.png" id="logo-img"/>
     <form onSubmit={handleSubmit}>
@@ -52,6 +53,7 @@ const LoginForm = () => {
       <button type="submit" class="login-btn">Sign Up</button>
     </form>
   
+    </div>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React , {useState} from 'react';
 import Navbar from '../components/navbar';
 import CurrentBills from '../components/currentbills';
 import PaidBills from '../components/paidbills';
+import MoreInfoContainer from '../components/billmoreinfo'
 import './Bills.css'
 
 const Bills = () => {
@@ -15,7 +16,7 @@ const Bills = () => {
         setCurrentBillsSelected(false)
     }
     return (
-        <div>
+        <div style={{paddingTop: "100px"}}>
             <Navbar />
             <div class="body-container">
                 <div class="bill-tab">
@@ -35,6 +36,7 @@ const Bills = () => {
                     
                     
                 </div>
+                {/* <MoreInfoContainer /> */}
             </div>
         </div>
     );

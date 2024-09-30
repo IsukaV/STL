@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './paidbillitem.css';
 
 const BillItem = ({ id, date, duedate, amount }) => {
+
+    
     return (
         <div>
             <div class="bill-container">
@@ -24,6 +26,7 @@ const BillItem = ({ id, date, duedate, amount }) => {
                         <button class="delete-btn">Delete</button>
                     </div>
                 </div>
+                
         </div>
     );
 };

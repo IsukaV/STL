@@ -1,9 +1,16 @@
 body {
     font-family: 'Poppins';
+
+}
+
+.login-page-background{
+    background-image: url('../../public/images/Background.jpeg');
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .TextBox{
-    width: 300px;
+    width: 100%;
     height: 30px;
     display: block;
     border-radius: 2px;
@@ -61,6 +68,16 @@ body {
 
 .textbox-label{
     font-size: 12px;
+}
+
+.forgot-pw-txt{
+    font-weight: bold;
+    cursor: pointer;
+}
+.forgot-pw-txt:hover{
+    color: #f39c12;
+    
+
 }
 
 .signup-link{

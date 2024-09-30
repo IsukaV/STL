@@ -2,6 +2,12 @@ body {
     font-family: 'Poppins';
 }
 
+.signup-page-background{
+    background-image: url('../../public/images/Background.jpeg');
+    background-size: cover;
+    min-height: 100vh;
+}
+
 .TextBox{
     width: 300px;
     height: 30px;

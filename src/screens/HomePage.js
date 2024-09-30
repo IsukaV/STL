@@ -17,7 +17,7 @@ const HomePage = () => {
 
   return (
 
-    <div>
+    <div style={{paddingTop: "100px"}}>
       <Navbar />
         <div class="body">
           <h1>Hello, {user.username}!</h1>
