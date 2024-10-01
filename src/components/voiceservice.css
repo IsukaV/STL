@@ -1,0 +1,88 @@
+.custom-recharge-container{
+    height: 200px;
+    width: 500px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 234, 189);
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
+
+
+.textbox-container{
+    text-align: left;
+    margin: 20px auto;
+    width: 300px;
+}
+
+.recharge-textBox{
+    width: 150px;
+    height: 60px;
+    font-size: 15px;
+    display: block;
+    border-radius: 10px;
+    padding:0 20px;
+    border: 0px;
+    background-color: white;
+    border: 1px solid rgb(175, 175, 175);
+    font-family: 'Poppins';
+    margin: auto;
+    
+}
+
+.recharge-btn{
+    height: 40px;
+    width: 110px;
+    border: 0px;
+    border-radius: 20px;
+    background-color: #f39c12;
+    font-family: 'poppins';
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.voice-service{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 500px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 234, 189);
+    border-radius: 20px;
+    margin-bottom: 15px;
+    
+}
+
+.voice-service-container{
+    margin-left: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.data-amount{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.data-price{
+    font-size: 13px;
+}
+
+.activate-data-service-btn{
+    height: 40px;
+    width: 90px;
+    border: 0px;
+    border-radius: 20px;
+    background-color: #f39c12;
+    margin-right: 10px;
+    font-family: 'poppins';
+    cursor: pointer;
+}
+
+.activate-data-service-btn:hover{
+    font-weight: bold;
+}
+

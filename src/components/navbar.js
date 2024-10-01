@@ -45,13 +45,15 @@ const Navbar = () => {
             <ul className="nav-links">
                 <li>
                     <Link to="/home" className={location.pathname === '/home' ? 'active' : ''}>Home</Link>
-                </li>
-                <li>
-                    <Link to="/bills" className={location.pathname === '/bills' ? 'active' : ''}>Bills</Link>
+                    
                 </li>
                 <li>
                     <Link to="/services" className={location.pathname === '/services' ? 'active' : ''}>Services</Link>
                 </li>
+                <li>
+                    <Link to="/bills" className={location.pathname === '/bills' ? 'active' : ''}>Bills</Link>
+                </li>
+
                 <li>
                     <div style={{position: 'relative'}}>
                         <span class="notification-icon" className="material-symbols-outlined" onClick={handleNotificationsClicked}>notifications</span>

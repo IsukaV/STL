@@ -1,7 +1,10 @@
 import React , {useState} from 'react'
+import { useLocation } from 'react-router-dom';
 import './Payment.css'
 
 const Payment = () => {
+    const location = useLocation();
+    const { data } = location.state || {}; 
     const [stepNumber, setStepNumber] = useState(1)
   const [selectedMethod, setSelectedMethod] = useState('');
 
@@ -28,8 +31,8 @@ const Payment = () => {
 
             <div class="transaction-details">
             <h3>Transaction Details</h3>
-            <div class="transaction-record"><p style={{fontWeight:"bold"}}>Type of payment:</p><p>Bill</p></div>
-            <div class="transaction-record"><p style={{fontWeight:"bold"}}>Amount:</p><p>LKR 323.00</p></div>
+            <div class="transaction-record"><p style={{fontWeight:"bold"}}>Type of payment:</p><p>{data?.type}</p></div>
+            <div class="transaction-record"><p style={{fontWeight:"bold"}}>Amount:</p><p>{data?.amt}</p></div>
 
             </div>
 

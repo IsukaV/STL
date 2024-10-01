@@ -15,8 +15,10 @@ const BillItem = ({ id, date, duedate, amount }) => {
     }
 
     const handleOnlinePay = () => {
-        navigate('/payment');
-    }
+        const data = { amt: amount, type: 'Bill Payment' };
+      
+        navigate('/payment', { state: { data } });
+      };
 
     return (
         <div>

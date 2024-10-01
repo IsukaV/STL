@@ -5,14 +5,16 @@ import './Login.css'
 
 const LoginForm = () => {
   const navigate = useNavigate();
-  const [username, setUsername] = useState('John');
+  const [username, setUsername] = useState('Nimal');
   const [password, setPassword] = useState('asdfsadf');
+  const [voice, setVoice] = useState(300);
+  const [data, setData] = useState(1.5);
   const { login } = useContext(AuthContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Implement your authentication logic here (e.g., API call)
-    login({ username, password });
+    login({ username, password , voice, data});
     navigate('/home');
   };
 

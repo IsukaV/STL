@@ -13,14 +13,15 @@ const LoginForm = () => {
     e.preventDefault();
     // Implement your authentication logic here (e.g., API call)
     login({ username, password });
-    navigate('/home');
+    alert('Account Created')
+    navigate('/login');
   };
 
   return (
     <div class="signup-page-background">
     <div class="login-container">
       <img src="/images/STL-logo.png" id="logo-img"/>
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} style={{paddingBottom: '20px'}}>
       {/* Your login form inputs */}
       
       <h3>Signup</h3>
@@ -48,6 +49,10 @@ const LoginForm = () => {
         <label class="textbox-label">Confirm Password</label>
         <input type="password" placeholder="Enter Password" class="TextBox"/>
       </div>
+      <div style={{display: 'flex', justifyContent: 'center'}}>
+        <input type="checkbox" />
+      <label class="textbox-label">I accept terms and conditions.</label>
+        </div>
 
       {/* <p class="signup-txt">Don't have an account? <span class="signup-link">Sign-up</span></p> */}
       <button type="submit" class="login-btn">Sign Up</button>
